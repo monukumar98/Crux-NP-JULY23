@@ -32,6 +32,7 @@ public class Word_Search {
 		for (int k = 0; k < c.length; k++) {
 			boolean ans = WordSearch(board, word, i + r[k], j + c[k], idx + 1);
 			if (ans) {
+				
 				return true;
 			}
 
