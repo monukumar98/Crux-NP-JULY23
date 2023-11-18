@@ -70,6 +70,7 @@ public class LinkedList {
 		return GetNode(k).data;
 	}
 
+	// O(1)
 	public int removefirst() {
 		int rv = head.data;
 		if (size == 1) {
@@ -87,6 +88,7 @@ public class LinkedList {
 
 	}
 
+	// O(N)
 	public int removelast() {
 		if (size == 1) {
 			return removefirst();
@@ -100,6 +102,7 @@ public class LinkedList {
 		}
 	}
 
+//O(N)
 	public int removeatindex(int k) {
 		if (k == 0) {
 			return removefirst();
@@ -110,6 +113,8 @@ public class LinkedList {
 			Node kth = GetNode(k);
 			K_1th.next = kth.next;
 			kth.next = null;
+			size--;
+			return kth.data;
 
 		}
 
