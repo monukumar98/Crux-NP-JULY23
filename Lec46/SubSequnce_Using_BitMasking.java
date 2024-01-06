@@ -8,14 +8,12 @@ public class SubSequnce_Using_BitMasking {
 		PrintSubSequnce(s);
 
 	}
-
 	public static void PrintSubSequnce(String s) {
 		int len = s.length();
 		for (int i = 0; i < (1 << len); i++) {
 			PrintPattern(s, i);
 		}
 	}
-
 	private static void PrintPattern(String s, int i) {
 		// TODO Auto-generated method stub
 		int pos = 0;
@@ -27,7 +25,6 @@ public class SubSequnce_Using_BitMasking {
 			i >>= 1;
 		}
 		System.out.println();
-
 	}
 
 }
